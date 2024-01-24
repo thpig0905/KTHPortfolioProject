@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.content {
+    flex: 8;
+    display: flex;
+    transition: 0.5s;
+    background: linear-gradient(to bottom, rgba(148, 147, 147, 0.49), rgba(255, 255, 255, 0.49));
+}
+.cards {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s linear;
+    background: linear-gradient(to top, rgba(148, 147, 147, 0.49), rgba(255, 255, 255, 0.49));
+}
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.73);
+    background-color: skyblue;
+    width: 500px;
+    height: 250px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(200px);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.card:first-child {
+    margin-left: 0;
+}
+
+.weather {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    width: 100%;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon > img {
+    width: 200px;
+    height: 200px;
+}
+.location {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+.script {
+    flex: 6;
+    margin-left: 50px;
+}
+.script > p {
+    margin-top: 50px;
+}
+
+.today {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time {
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 100px;
+    font-weight: bold
+}
+.calender {
+    background-color: rgba(213, 210, 210, 0.35);
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.calender > header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.calender > header > button {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.calender > header > button:first-child {
+    margin-right: 20px;
+}
+.calender > header > button:last-child {
+    margin-left: 20px;
+}
+#currentDate {
+    line-height: 25px;
+}
+.calender > table {
+    margin-top: 20px;
+}
+
+.todoList {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    border-radius: 15px;
+    display: flex;
+    border: 5px solid rgba(210, 208, 208, 0.53);
+    width: 100%;
+    height: 500px;
+    transform: translateX(250px);
+    transition: all 0.5s;
+}
+.list > h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 50px;
+    line-height: 50px;
+}
+.list > ul {
+    margin: 0;
+    list-style: disc;
+    padding: 0;
+    flex: 1;
+    overflow: scroll;
+}
+.list > ul > li {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+.list:hover {
+    transform: translateX(0);
+    cursor: pointer;
+}
