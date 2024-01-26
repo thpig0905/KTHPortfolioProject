@@ -145,3 +145,7 @@ function secondeBar (second) {
         radian
     })
 }
+
+const body = document.querySelector('body');
+
+body.classList.add('change');

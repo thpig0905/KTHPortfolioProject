@@ -14,19 +14,22 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background: linear-gradient(to right, orangered, goldenrod);
+            opacity: 0;
+            transition: 2s;
         }
-
+        .change {
+            background-color: goldenrod;
+            opacity: 1;
+        }
         canvas {
             height: 500px;
             width: 500px;
         }
-
         h1 {
             font-size: 100px;
             margin: 0;
             padding: 0;
-            color: lightblue;
+            color: white;
         }
     </style>
 </head>
