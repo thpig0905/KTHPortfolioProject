@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+header {
+    border: 1px solid black;
+    display: flex;
+}
+header > h1 {
+    flex: 2;
+    border: 1px solid black;
+}
+header > nav {
+    flex: 8;
+    border: 1px solid black;
+}

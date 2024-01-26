@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -23,7 +24,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.5s linear;
     background: linear-gradient(to top, rgba(148, 147, 147, 0.49), rgba(255, 255, 255, 0.49));
 }
 .card {
@@ -47,6 +47,7 @@ body {
 }
 
 .weather {
+    height: 100%;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -59,20 +60,27 @@ body {
     align-items: center;
 }
 .icon > img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 .location {
+    margin: 0;
+    flex: 1;
     text-align: center;
     font-weight: bold;
     font-size: 3em;
 }
 .script {
+    width: 100%;
+    margin: 0;
     flex: 6;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .script > p {
-    margin-top: 50px;
+    flex: 1;
+    margin-left: 30px;
 }
 
 .today {
@@ -90,14 +98,42 @@ body {
     font-size: 100px;
     font-weight: bold
 }
-.calender {
-    background-color: rgba(213, 210, 210, 0.35);
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    margin-top: 30px;
+.search {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    width: 500px;
+    height: 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.search > input {
+    width: 90%;
+    height: 100%;
+    margin-right: 20px;
+    color: #5b5b5b;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+.search > input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /*placeholder 지우기*/
+}
+.search > button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search > button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .calender > header {
     margin-top: 20px;
@@ -132,11 +168,12 @@ body {
 }
 .list {
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
-    border: 5px solid rgba(210, 208, 208, 0.53);
+    border: none;
     width: 100%;
     height: 500px;
-    transform: translateX(250px);
+    transform: translateX(70%);
     transition: all 0.5s;
 }
 .list > h1 {
@@ -159,6 +196,16 @@ body {
     line-height: 50px;
 }
 .list:hover {
-    transform: translateX(0);
+    transform: translateX(-10%);
+    border: none;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.73);
+}
+a:hover {
+    color: white;
 }

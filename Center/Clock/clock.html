@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="clock.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right, orangered, goldenrod);
+        }
+
+        canvas {
+            height: 500px;
+            width: 500px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            padding: 0;
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <h1 id="time">-- : -- : --</h1>
+</body>
+</html>

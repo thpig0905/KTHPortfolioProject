@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>KTHPortfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="center.css">
+    <script defer src="center.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div class="container">
@@ -25,26 +26,9 @@
             </div>
             <div class="today">
                 <div class="time">-- : --</div>
-                <div class="calender">
-                    <header>
-                        <button id="prev"><</button>
-                        <div id="currentDate">September 2024</div>
-                        <button id="next">></button>
-                    </header>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="color: red">Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th style="color: blue">Sat</th>
-                            </tr>
-                        </thead>
-                    </table>
-
+                <div class="search">
+                    <input class="searchInput" type="text" placeholder="Search">
+                    <button class="searchBtn"><span class="material-symbols-outlined">search</span></button>
                 </div>
             </div>
             <div class="todoList">
@@ -67,32 +51,32 @@
         </div>
         <div class="cards">
             <div class="card" style="background-color: red">
-                <h1>./Intro/KTH</h1>
-                <p>Introducing Who Am I...</p>
+                <h1>Intro</h1>
+                <a href="./Intro/intro.html">Introducing Who Am I...</a>
             </div>
             <div class="card" style="background-color: orangered">
                 <h1>About Me</h1>
-                <p>Please listen to My Story...</p>
+                <a href="./About/about.html">Please listen to My Story...</a>
             </div>
             <div class="card"  style="background-color: goldenrod">
-                <h1>~./Project01</h1>
-                <p>'Clock'</p>
+                <h1>Project01</h1>
+                <a href="./Clock/clock.html">'Clock'</a>
             </div>
             <div class="card" style="background-color: darkorchid">
-                <h1>~./Project02</h1>
-                <p>'toDay'</p>
+                <h1>Project02</h1>
+                <a href="./Calendar/calendar.html">'Calendar'</a>
             </div>
             <div class="card" style="background-color: darkcyan">
-                <h1>~./Project03</h1>
-                <p>'MaP'</p>
+                <h1>Project03</h1>
+                <a href="./Map/map.html">'MaP'</a>
             </div>
             <div class="card" style="background-color: mediumblue">
                 <h1>~ing...</h1>
-                <p>RPG</p>
+                <a>Snake</a>
             </div>
             <div class="card" style="background-color: green">
                 <h1>Next...</h1>
-                <p>Projects I want to do in the future...</p>
+                <a>Next things...</a>
             </div>
         </div>
     </div>
