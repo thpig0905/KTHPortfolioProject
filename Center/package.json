@@ -1,0 +1,20 @@
+{
+  "homepage": "https://thpig0905.github.io/KTHPortfolio/Center/center.html",
+  "name": "center",
+  "version": "2.1.2",
+  "description": "",
+  "main": "center.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thpig0905/KTHPortfolio.git"
+  },
+  "private": true
+}
