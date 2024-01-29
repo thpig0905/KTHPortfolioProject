@@ -120,3 +120,12 @@ const list = document.querySelector('.list');
 list.addEventListener('click', (e) => {
   window.open('./todoList/todoList.html', '_blank', 'width=500, height=500, left=100, top=100')
 });
+
+
+const not = document.querySelectorAll('.not');
+
+not.forEach((not) => {
+    not.addEventListener('click', () => {
+         window.alert('준비중입니다.');
+    });
+});

@@ -20,11 +20,9 @@
 - 화면 시점이 먼저 가는곳에 시계와 검색 구현
 - 우측에 todolist View 구현
 
-### Intro 
+### README Link
 
-- 간단한 자기소개
-- 중요성 낮다고 생각해서 구현 연기
-- 추후에 추가 예정
+- 해당 페이지 구현한 GitHub Link 로 이동
 
 ### GitHub
 
