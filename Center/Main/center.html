@@ -12,7 +12,7 @@
         <div class="content">
             <div class="weather">
                 <div class="icon">
-                    <img src="./img/sun.png" alt="sun" id="icon">
+                    <img src="../img/sun.png" alt="sun" id="icon">
                 </div>
                 <h1 class="location">--</h1>
                 <div class="script">
@@ -60,15 +60,15 @@
             </div>
             <div class="card"  style="background-color: goldenrod">
                 <h1>Project01</h1>
-                <a href="./Clock/clock.html">'Clock'</a>
+                <a href="../Clock/clock.html">'Clock'</a>
             </div>
             <div class="card" style="background-color: darkorchid">
                 <h1>Project02</h1>
-                <a href="./Calendar/calendar.html">'Calendar'</a>
+                <a href="../Calendar/calendar.html">'Calendar'</a>
             </div>
             <div class="card" style="background-color: darkcyan">
                 <h1>Project03</h1>
-                <a href="./Map/map.html">'MaP'</a>
+                <a href="../Map/map.html">'MaP'</a>
             </div>
             <div class="card" style="background-color: mediumblue">
                 <h1>~ing</h1>
@@ -82,3 +82,12 @@
     </div>
 </body>
 </html>
+
+<BrowserRouter>
+    <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/clock" component={Clock} />
+        <Route path="/calendar" component={Calendar} />
+        <Route path="/map" component={Map} />
+    </Switch>
+</BrowserRouter>

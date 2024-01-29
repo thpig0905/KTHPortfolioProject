@@ -3,7 +3,7 @@
   "name": "center",
   "version": "2.1.2",
   "description": "",
-  "main": "center.html",
+  "main": "Main/center.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
